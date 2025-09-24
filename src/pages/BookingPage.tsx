@@ -19,22 +19,22 @@ const BookingPage = () => {
           Izaberi teren, trajanje termina i željeni dan
         </p>
       </header>
-    <div className="w-full max-w-sm mx-auto px-4">
-      <header className="text-center mb-8">
-        <h1 className="text-3xl font-extrabold font-display text-gray-900 leading-tight mb-3">
+    <div className="w-full min-h-[650px] flex flex-col">
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-extrabold font-display text-gray-900 leading-tight mb-4">
           Rezerviši svoj padel termin
         </h1>
-        <p className="text-base text-gray-600 mb-8">
+        <p className="text-lg text-gray-600">
           Izaberi teren, trajanje termina i željeni dan
         </p>
-      </header>
+      </div>
 
-      <div className="space-y-6">
+      <div className="flex-grow flex flex-col gap-4 max-w-md mx-auto w-full px-4">
         <button 
           data-cal-namespace="teren-1"
           data-cal-link="park-klub/teren-1"
           data-cal-config='{"layout":"month_view"}'
-          className="w-full bg-[#337a67] hover:bg-[#2a6355] text-white font-semibold py-12 px-6 rounded-xl shadow-lg transition-colors duration-200 text-xl min-h-[120px] flex items-center justify-center"
+          className="flex-1 bg-[#337a67] hover:bg-[#2a6355] text-white font-semibold rounded-xl shadow-lg transition-colors duration-200 text-xl flex items-center justify-center"
         >
           Teren 1
         </button>
@@ -43,7 +43,7 @@ const BookingPage = () => {
           data-cal-namespace="teren-2"
           data-cal-link="park-klub/teren-2"
           data-cal-config='{"layout":"month_view"}'
-          className="w-full bg-[#337a67] hover:bg-[#2a6355] text-white font-semibold py-12 px-6 rounded-xl shadow-lg transition-colors duration-200 text-xl min-h-[120px] flex items-center justify-center"
+          className="flex-1 bg-[#337a67] hover:bg-[#2a6355] text-white font-semibold rounded-xl shadow-lg transition-colors duration-200 text-xl flex items-center justify-center"
         >
           Teren 2
         </button>

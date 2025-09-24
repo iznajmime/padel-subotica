@@ -11,13 +11,6 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ currentPage, onNavClick }) => {
   return (
     <header className="w-full max-w-5xl mx-auto mb-10">
-      <div className="flex justify-center mb-6">
-        <img 
-          src={logo} 
-          alt="Padel Subotica Logo" 
-          className="h-16 w-auto"
-        />
-      </div>
       <nav className="flex justify-center space-x-6 sm:space-x-8">
         <button
           onClick={() => onNavClick('rezervacije')}
