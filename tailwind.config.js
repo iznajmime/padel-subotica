@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         display: ['Poppins', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
       },
       boxShadow: {
         'custom': '0 20px 40px -15px #0e151f4D',
