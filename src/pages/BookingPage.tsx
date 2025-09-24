@@ -1,38 +1,45 @@
 import React, { useEffect } from 'react';
-import Cal, { getCalApi } from "@calcom/embed-react";
+import { getCalApi } from "@calcom/embed-react";
 
 const BookingPage = () => {
   useEffect(() => {
     (async function () {
-      const cal = await getCalApi({"namespace":"padel-termin"});
-      cal("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#baa070"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      const cal = await getCalApi({"namespace":"teren-1"});
+      cal("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#337a67"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
     })();
   }, []);
 
   return (
-    <>
-      <header className="text-center mb-8 w-full max-w-md sm:max-w-lg lg:max-w-2xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl font-extrabold font-display text-gray-900 leading-tight mb-2">
+    <div className="w-full max-w-sm mx-auto px-4">
+      <header className="text-center mb-8">
+        <h1 className="text-3xl font-extrabold font-display text-gray-900 leading-tight mb-3">
           Rezerviši svoj padel termin
         </h1>
-        <p className="text-lg sm:text-xl text-gray-600">
-          Izaberi trajanje termina, željeni dan i vreme.
+        <p className="text-base text-gray-600 mb-8">
+          Izaberi teren, trajanje termina i željeni dan
         </p>
       </header>
 
-      <div className="w-full max-w-md sm:max-w-lg lg:max-w-2xl rounded-xl shadow-custom">
-        <main className="w-full bg-white rounded-xl overflow-hidden">
-          <div className="min-h-[650px] w-full">
-            <Cal
-              namespace="padel-termin"
-              calLink="padel-subotica/padel-termin"
-              style={{ width: "100%", height: "100%", overflow: "scroll" }}
-              config={{ "layout": "month_view", "theme": "light" }}
-            />
-          </div>
-        </main>
+      <div className="space-y-4">
+        <button 
+          data-cal-namespace="teren-1"
+          data-cal-link="park-klub/teren-1"
+          data-cal-config='{"layout":"month_view"}'
+          className="w-full bg-[#337a67] hover:bg-[#2a6355] text-white font-semibold py-6 px-6 rounded-xl shadow-lg transition-colors duration-200 text-lg"
+        >
+          Teren 1
+        </button>
+        
+        <button 
+          data-cal-namespace="teren-2"
+          data-cal-link="park-klub/teren-2"
+          data-cal-config='{"layout":"month_view"}'
+          className="w-full bg-[#337a67] hover:bg-[#2a6355] text-white font-semibold py-6 px-6 rounded-xl shadow-lg transition-colors duration-200 text-lg"
+        >
+          Teren 2
+        </button>
       </div>
-    </>
+    </div>
   );
 };
 
