@@ -16,6 +16,13 @@ const BookingPage = () => {
     })();
   }, []);
 
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"teren-2"});
+      cal("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#337a67"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, []);
+
   return (
     <div className="w-full max-w-sm mx-auto px-4">
       <header className="text-center mb-8">
@@ -41,6 +48,9 @@ const BookingPage = () => {
         </button>
         
         <button 
+          data-cal-namespace="teren-2"
+          data-cal-link="park-klub/teren-2"
+          data-cal-config='{"layout":"month_view","theme":"light"}'
           data-cal-namespace="teren-2"
           data-cal-link="park-klub/teren-2"
           data-cal-config='{"layout":"month_view"}'
