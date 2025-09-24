@@ -15,7 +15,7 @@ function App() {
       
       <main className="flex-grow w-full flex flex-col items-center justify-center px-4">
         {currentPage === 'rezervacije' && <BookingPage />}
-        {currentPage === 'cenovnik' && <PricingPage />}
+        {currentPage === 'cenovnik' && <PricingPage onNavClick={setCurrentPage} />}
         {currentPage === 'kako-do-nas' && <LocationPage />}
       </main>
 

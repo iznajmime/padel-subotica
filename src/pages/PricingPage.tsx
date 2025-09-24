@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 
-const PricingPage = () => {
+interface PricingPageProps {
+  onNavClick: (page: 'rezervacije' | 'cenovnik' | 'kako-do-nas') => void;
+}
+
+const PricingPage: React.FC<PricingPageProps> = ({ onNavClick }) => {
   const [isYearly, setIsYearly] = useState(false);
 
   return (
@@ -33,7 +37,10 @@ const PricingPage = () => {
             </div>
           </div>
 
-          <button className="w-full bg-[#337a67] hover:bg-[#2a6355] text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <button 
+            onClick={() => onNavClick('rezervacije')}
+            className="w-full bg-[#337a67] hover:bg-[#2a6355] text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
             Rezerviši Sada
           </button>
         </div>
@@ -64,7 +71,10 @@ const PricingPage = () => {
             </div>
           </div>
 
-          <button className="w-full bg-[#337a67] hover:bg-[#2a6355] text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg">
+          <button 
+            onClick={() => onNavClick('rezervacije')}
+            className="w-full bg-[#337a67] hover:bg-[#2a6355] text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
             Rezerviši Sada
           </button>
         </div>
