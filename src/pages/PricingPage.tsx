@@ -1,5 +1,4 @@
 import React from 'react';
-import { Clock } from 'lucide-react';
 
 const PricingPage = () => {
   return (
@@ -12,16 +11,12 @@ const PricingPage = () => {
         <div className="space-y-8">
           {/* Morning Sessions Table */}
           <div className="bg-gray-50 rounded-lg p-6">
-            <div className="flex items-center justify-center mb-4">
-              <h2 className="text-2xl font-bold font-display text-gray-800 mr-3">
+            <div className="text-center mb-6">
+              <h2 className="text-2xl font-bold font-display text-gray-800 mb-2">
                 Jutarnji Termini
               </h2>
-              <Clock className="w-6 h-6 text-[#337a67]" />
+              <p className="text-gray-600">9:00 - 16:00</p>
             </div>
-            <p className="text-center text-gray-600 mb-6 flex items-center justify-center">
-              <Clock className="w-4 h-4 mr-2 text-gray-500" />
-              9:00 - 16:00
-            </p>
             
             <div className="overflow-x-auto">
               <table className="w-full">
@@ -51,16 +46,12 @@ const PricingPage = () => {
 
           {/* Afternoon Sessions Table */}
           <div className="bg-gray-50 rounded-lg p-6">
-            <div className="flex items-center justify-center mb-4">
-              <h2 className="text-2xl font-bold font-display text-gray-800 mr-3">
+            <div className="text-center mb-6">
+              <h2 className="text-2xl font-bold font-display text-gray-800 mb-2">
                 Poslepodnevni Termini
               </h2>
-              <Clock className="w-6 h-6 text-[#337a67]" />
+              <p className="text-gray-600">16:00 - 23:00</p>
             </div>
-            <p className="text-center text-gray-600 mb-6 flex items-center justify-center">
-              <Clock className="w-4 h-4 mr-2 text-gray-500" />
-              16:00 - 23:00
-            </p>
             
             <div className="overflow-x-auto">
               <table className="w-full">
