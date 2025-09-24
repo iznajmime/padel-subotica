@@ -1,7 +1,15 @@
 import React, { useEffect } from 'react';
 import { getCalApi } from "@calcom/embed-react";
+import { getCalApi } from "@calcom/embed-react";
 
 const BookingPage = () => {
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({"namespace":"teren-1"});
+      cal("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#337a67"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
+    })();
+  }, []);
+
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({"namespace":"teren-1"});
@@ -22,6 +30,9 @@ const BookingPage = () => {
 
       <div className="flex-grow flex flex-col gap-6 max-w-md mx-auto w-full px-4 min-h-[500px]">
         <button 
+          data-cal-namespace="teren-1"
+          data-cal-link="park-klub/teren-1"
+          data-cal-config='{"layout":"month_view"}'
           data-cal-namespace="teren-1"
           data-cal-link="park-klub/teren-1"
           data-cal-config='{"layout":"month_view"}'
