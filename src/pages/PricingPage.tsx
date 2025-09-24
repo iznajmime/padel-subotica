@@ -9,10 +9,12 @@ const PricingPage = () => {
         <p className="text-sm text-gray-500 uppercase tracking-wide mb-4">
           IZABERI TERMIN KOJI TI ODGOVARA
         </p>
-        <h1 className="text-4xl sm:text-5xl font-extrabold font-display text-gray-900 leading-tight mb-8">
-          Pronađi Pravi Termin<br />
-          za Tvoj Padel
+        <h1 className="text-4xl sm:text-5xl font-extrabold font-display text-gray-900 leading-tight mb-4">
+          Jutarnji / Poslepodnevni Termini
         </h1>
+        <p className="text-lg text-gray-600 mb-8">
+          9:00 - 16:00 / 16:00 - 23:00
+        </p>
         
         {/* Toggle Switch */}
         <div className="flex items-center justify-center gap-4 mb-6">
@@ -41,18 +43,14 @@ const PricingPage = () => {
       </div>
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto">
         {/* Morning Card */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 relative">
+        <div className="bg-white rounded-3xl shadow-xl p-8 relative">
           <div className="text-center mb-6">
             <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <div className="w-6 h-6 bg-blue-500 rounded-full"></div>
             </div>
             <p className="text-gray-500 text-sm uppercase tracking-wide mb-2">Jutarnji</p>
-            <div className="mb-4">
-              <span className="text-4xl font-bold text-gray-900">1500</span>
-              <span className="text-gray-500 text-lg">/sat</span>
-            </div>
           </div>
 
           <h3 className="text-xl font-bold text-gray-900 mb-6">
@@ -101,16 +99,12 @@ const PricingPage = () => {
         </div>
 
         {/* Afternoon Card */}
-        <div className="bg-white rounded-2xl shadow-lg p-8 relative">
+        <div className="bg-white rounded-3xl shadow-xl p-8 relative">
           <div className="text-center mb-6">
             <div className="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
               <div className="w-6 h-6 bg-pink-500 rounded-full"></div>
             </div>
             <p className="text-gray-500 text-sm uppercase tracking-wide mb-2">Poslepodnevni</p>
-            <div className="mb-4">
-              <span className="text-4xl font-bold text-gray-900">2000</span>
-              <span className="text-gray-500 text-lg">/sat</span>
-            </div>
           </div>
 
           <h3 className="text-xl font-bold text-gray-900 mb-6">
@@ -157,13 +151,6 @@ const PricingPage = () => {
             Rezerviši Sada
           </button>
         </div>
-      </div>
-
-      {/* Footer Text */}
-      <div className="text-center mt-12">
-        <p className="text-gray-500 text-sm">
-          * Molimo pročitajte <a href="#" className="underline">Uslove korišćenja</a>
-        </p>
       </div>
     </div>
   );
