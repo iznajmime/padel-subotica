@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from '../assets/logo.png';
 
-type Page = 'rezervacije' | 'kako-do-nas';
+type Page = 'rezervacije' | 'cenovnik' | 'kako-do-nas';
 
 interface HeaderProps {
   currentPage: Page;
@@ -11,10 +11,10 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ currentPage, onNavClick }) => {
   return (
     <header className="w-full max-w-5xl mx-auto mb-10">
-      <nav className="flex justify-center space-x-6 sm:space-x-8">
+      <nav className="flex justify-center space-x-4 sm:space-x-6">
         <button
           onClick={() => onNavClick('rezervacije')}
-          className={`relative px-4 py-4 text-base sm:text-lg font-semibold transition-colors duration-200 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-[#337a67] after:origin-left after:transition-transform after:duration-300 ${
+          className={`relative px-2 sm:px-4 py-4 text-sm sm:text-base lg:text-lg font-semibold transition-colors duration-200 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-[#337a67] after:origin-left after:transition-transform after:duration-300 ${
             currentPage === 'rezervacije'
               ? 'text-[#337a67] after:scale-x-100'
               : 'text-gray-600 hover:text-gray-900 after:scale-x-0 hover:after:scale-x-100'
@@ -23,8 +23,18 @@ const Header: React.FC<HeaderProps> = ({ currentPage, onNavClick }) => {
           Rezervacije
         </button>
         <button
+          onClick={() => onNavClick('cenovnik')}
+          className={`relative px-2 sm:px-4 py-4 text-sm sm:text-base lg:text-lg font-semibold transition-colors duration-200 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-[#337a67] after:origin-left after:transition-transform after:duration-300 ${
+            currentPage === 'cenovnik'
+              ? 'text-[#337a67] after:scale-x-100'
+              : 'text-gray-600 hover:text-gray-900 after:scale-x-0 hover:after:scale-x-100'
+          }`}
+        >
+          Cenovnik
+        </button>
+        <button
           onClick={() => onNavClick('kako-do-nas')}
-          className={`relative px-4 py-4 text-base sm:text-lg font-semibold transition-colors duration-200 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-[#337a67] after:origin-left after:transition-transform after:duration-300 ${
+          className={`relative px-2 sm:px-4 py-4 text-sm sm:text-base lg:text-lg font-semibold transition-colors duration-200 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-[2px] after:bg-[#337a67] after:origin-left after:transition-transform after:duration-300 ${
             currentPage === 'kako-do-nas'
               ? 'text-[#337a67] after:scale-x-100'
               : 'text-gray-600 hover:text-gray-900 after:scale-x-0 hover:after:scale-x-100'

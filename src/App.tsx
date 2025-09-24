@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import Header from './components/Header';
 import BookingPage from './pages/BookingPage';
 import LocationPage from './pages/LocationPage';
+import PricingPage from './pages/PricingPage';
 
-type Page = 'rezervacije' | 'kako-do-nas';
+type Page = 'rezervacije' | 'cenovnik' | 'kako-do-nas';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<Page>('rezervacije');
@@ -14,6 +15,7 @@ function App() {
       
       <main className="flex-grow w-full flex flex-col items-center justify-center px-4">
         {currentPage === 'rezervacije' && <BookingPage />}
+        {currentPage === 'cenovnik' && <PricingPage />}
         {currentPage === 'kako-do-nas' && <LocationPage />}
       </main>
 
