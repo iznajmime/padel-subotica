@@ -5,21 +5,14 @@ const BookingPage = () => {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({"namespace":"teren-1"});
-      cal("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#337a67"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
-    })();
-  }, []);
-
-  useEffect(() => {
-    (async function () {
-      const cal = await getCalApi({"namespace":"teren-1"});
-      cal("ui", {"cssVarsPerTheme":{"light":{"cal-brand":"#337a67"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      cal("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#0056bf"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":true,"layout":"month_view"});
     })();
   }, []);
 
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({"namespace":"teren-2"});
-      cal("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#337a67"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
+      cal("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#0056bf"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
     })();
   }, []);
 
@@ -38,10 +31,7 @@ const BookingPage = () => {
         <button 
           data-cal-namespace="teren-1"
           data-cal-link="park-klub/teren-1"
-          data-cal-config='{"layout":"month_view"}'
-          data-cal-namespace="teren-1"
-          data-cal-link="park-klub/teren-1"
-          data-cal-config='{"layout":"month_view"}'
+          data-cal-config='{"layout":"month_view","theme":"light"}'
           className="bg-[#0056bf] hover:bg-[#004299] text-white font-semibold rounded-xl shadow-lg transition-colors duration-200 text-xl flex items-center justify-center py-8 h-20"
         >
           Teren 1
@@ -51,9 +41,6 @@ const BookingPage = () => {
           data-cal-namespace="teren-2"
           data-cal-link="park-klub/teren-2"
           data-cal-config='{"layout":"month_view","theme":"light"}'
-          data-cal-namespace="teren-2"
-          data-cal-link="park-klub/teren-2"
-          data-cal-config='{"layout":"month_view"}'
           className="bg-[#0056bf] hover:bg-[#004299] text-white font-semibold rounded-xl shadow-lg transition-colors duration-200 text-xl flex items-center justify-center py-8 h-20"
         >
           Teren 2
