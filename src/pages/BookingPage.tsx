@@ -42,7 +42,7 @@ const BookingPage = () => {
           data-cal-namespace="teren-1"
           data-cal-link="park-klub/teren-1"
           data-cal-config='{"layout":"month_view"}'
-          className="flex-1 bg-[#337a67] hover:bg-[#2a6355] text-white font-semibold rounded-xl shadow-lg transition-colors duration-200 text-xl flex items-center justify-center py-12 min-h-[120px]"
+          className="bg-[#0056bf] hover:bg-[#004299] text-white font-semibold rounded-xl shadow-lg transition-colors duration-200 text-xl flex items-center justify-center py-6 h-16"
         >
           Teren 1
         </button>
@@ -54,7 +54,7 @@ const BookingPage = () => {
           data-cal-namespace="teren-2"
           data-cal-link="park-klub/teren-2"
           data-cal-config='{"layout":"month_view"}'
-          className="flex-1 bg-[#337a67] hover:bg-[#2a6355] text-white font-semibold rounded-xl shadow-lg transition-colors duration-200 text-xl flex items-center justify-center py-12 min-h-[120px]"
+          className="bg-[#0056bf] hover:bg-[#004299] text-white font-semibold rounded-xl shadow-lg transition-colors duration-200 text-xl flex items-center justify-center py-6 h-16"
         >
           Teren 2
         </button>
