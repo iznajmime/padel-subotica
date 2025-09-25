@@ -5,7 +5,7 @@ const BookingPage = () => {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi({"namespace":"teren-1"});
-      cal("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#0056bf"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":true,"layout":"month_view"});
+      cal("ui", {"theme":"light","cssVarsPerTheme":{"light":{"cal-brand":"#0056bf"},"dark":{"cal-brand":"#fafafa"}},"hideEventTypeDetails":false,"layout":"month_view"});
     })();
   }, []);
 
