@@ -13,7 +13,7 @@ const LocationPage = () => {
           <div>
             <div className="w-full h-64 sm:h-96 bg-gray-200 rounded-lg overflow-hidden border border-gray-300">
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2767.9924909161086!2d19.7071903!3d46.0711909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743670048f2da71%3A0x4bb3c27b7bf0a2dd!2sPadel%20Subotica!5e0!3m2!1sen!2srs!4v1752485786713!5m2!1sen!2srs" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.0130987455195!2d19.648984676845345!3d46.110645971091984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743670001697185%3A0xb2485d92fa2a2acf!2sPark%20Padel%20Klub!5e0!3m2!1sen!2srs!4v1758822661025!5m2!1sen!2srs"
                 className="w-full h-full border-0"
                 allowFullScreen={true}
                 loading="lazy" 
