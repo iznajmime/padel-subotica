@@ -26,7 +26,7 @@ const LocationPage = () => {
           <div className="text-center">
             <h2 className="text-3xl font-bold font-display text-gray-800 mb-3">Kontakt</h2>
             <p className="text-xl text-gray-600">
-              <strong>Telefon:</strong> <a href="tel:+38160677878" className="text-[#0056bf] hover:underline">+381 60 677 8788</a>
+              <strong>Telefon:</strong> <a href="tel:+38161130917" className="text-[#0056bf] hover:underline">+381 61 130 9171</a>
             </p>
           </div>
         </div>

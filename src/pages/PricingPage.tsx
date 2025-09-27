@@ -41,7 +41,7 @@ const PricingPage: React.FC<PricingPageProps> = ({ onNavClick }) => {
             onClick={() => onNavClick('rezervacije')}
             className="w-full bg-[#0056bf] hover:bg-[#004299] text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
-            Rezerviši Sada
+            Rezerviši sada
           </button>
         </div>
 
@@ -75,7 +75,7 @@ const PricingPage: React.FC<PricingPageProps> = ({ onNavClick }) => {
             onClick={() => onNavClick('rezervacije')}
             className="w-full bg-[#0056bf] hover:bg-[#004299] text-white font-bold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
-            Rezerviši Sada
+            Rezerviši sada
           </button>
         </div>
       </div>
