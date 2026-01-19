@@ -20,7 +20,7 @@ function App() {
       </main>
 
       <footer className="text-center text-gray-500 text-sm w-full mt-auto pt-8 pb-4">
-        <p>Izrada sistema: PGP Systems, info@pgpsystems.com</p>
+        <p>Izrada sistema: PGP Systems, alvaro@pgpsystems.net</p>
       </footer>
     </div>
   );
