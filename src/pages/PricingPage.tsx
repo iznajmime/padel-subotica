@@ -17,7 +17,7 @@ const PricingPage: React.FC<PricingPageProps> = ({ onNavClick }) => {
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
               Prepodnevni Termini
             </h3>
-            <p className="text-gray-500 text-lg">0:00 - 16:00</p>
+            <p className="text-gray-500 text-lg">9:00 - 16:00</p>
           </div>
 
           <div className="mb-10">
