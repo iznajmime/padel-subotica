@@ -31,9 +31,9 @@ const PricingPage: React.FC<PricingPageProps> = ({ onNavClick }) => {
               </div>
               <div className="space-y-4">
                 <div className="text-gray-700 font-semibold text-lg">Cena</div>
-                <div className="text-[#0056bf] font-bold">2200 RSD</div>
-                <div className="text-[#0056bf] font-bold">3300 RSD</div>
-                <div className="text-[#0056bf] font-bold">4000 RSD</div>
+                <div className="text-[#0056bf] font-bold">2000 RSD</div>
+                <div className="text-[#0056bf] font-bold">3000 RSD</div>
+                <div className="text-[#0056bf] font-bold">3600 RSD</div>
                 <div className="text-[#0056bf] font-bold">6500 RSD</div>
               </div>
             </div>
@@ -66,9 +66,9 @@ const PricingPage: React.FC<PricingPageProps> = ({ onNavClick }) => {
               </div>
               <div className="space-y-4">
                 <div className="text-gray-700 font-semibold text-lg">Cena</div>
-                <div className="text-[#0056bf] font-bold">2800 RSD</div>
-                <div className="text-[#0056bf] font-bold">4200 RSD</div>
-                <div className="text-[#0056bf] font-bold">5200 RSD</div>
+                <div className="text-[#0056bf] font-bold">2600 RSD</div>
+                <div className="text-[#0056bf] font-bold">3900 RSD</div>
+                <div className="text-[#0056bf] font-bold">4600 RSD</div>
               </div>
             </div>
           </div>
